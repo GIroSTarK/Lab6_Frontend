@@ -22,9 +22,11 @@ downloadButton.addEventListener('click', () => {
       personCard.append(picture, cell, city, postcode, email);
       personContainer.appendChild(personCard);
       message.textContent = 'Success!';
+      message.style.color = 'green';
     })
     .catch(() => {
       message.textContent = 'Error!';
+      message.style.color = 'red';
     })
     .finally(() => setTimeout(() => (message.textContent = ''), 3000));
 });
