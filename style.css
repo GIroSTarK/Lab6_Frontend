@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+#downloadBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#downloadButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#downloadButton:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  font-size: 16px;
+  color: #28a745;
+}
+
+#personContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.personCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.personCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #007bff;
+}
+
+.personCard p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+#message {
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
